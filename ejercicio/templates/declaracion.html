@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Declaración de Renta{% endblock %}
+
+{% block content %}
+<h2>Calculadora de Declaración de Renta</h2>
+<form method="post">
+    <input type="number" name="patrimonio" placeholder="Patrimonio bruto 2024" required><br>
+    <input type="number" name="ingresos" placeholder="Ingresos brutos 2024" required><br>
+    <input type="number" name="tarjetas" placeholder="Consumo con tarjeta de crédito" required><br>
+    <input type="number" name="compras" placeholder="Compras o consumos" required><br>
+    <input type="number" name="consignaciones" placeholder="Consignaciones bancarias" required><br>
+    <button type="submit">Calcular</button>
+</form>
+
+{% if resultado %}
+    <h3>{{ resultado }}</h3>
+{% endif %}
+{% endblock %}

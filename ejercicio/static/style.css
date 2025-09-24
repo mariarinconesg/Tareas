@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f5fb; /* fondo muy claro */
+    color: #4a355e; /* lila oscuro para texto */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #6a4c93; /* lila pastel */
+}
+
+ul {
+    list-style: none;
+    background: #d8b4f8; /* lila pastel */
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+ul li a:hover {
+    background: #b692e3; /* un poco más oscuro al pasar */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(106, 76, 147, 0.2);
+}
+
+input, button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #c3aed6;
+}
+
+button {
+    background: #c77dff; /* lila vibrante */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #9d4edd;
+}

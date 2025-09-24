@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Calculadora IMC{% endblock %}
+
+{% block content %}
+<h2>Calculadora de IMC</h2>
+<form method="post">
+    <input type="number" step="0.1" name="peso" placeholder="Peso en kg" required><br>
+    <input type="number" step="0.01" name="altura" placeholder="Altura en metros" required><br>
+    <button type="submit">Calcular</button>
+</form>
+
+{% if imc %}
+    <h3>Tu IMC es: {{ imc }}</h3>
+    <p>{{ categoria }}</p>
+{% endif %}
+{% endblock %}
